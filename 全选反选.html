@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /**{*/
+            /*padding: 0;*/
+            /*margin: 0;*/
+            /*list-style: none;*/
+        /*}*/
+        table{
+            border-collapse: collapse;
+            text-align: center;
+        }
+        tr{
+            opacity: 0.8;
+        }
+        tr:hover{
+            opacity: 1;
+        }
+        td{
+            opacity: 0.8;
+        }
+        td:hover{
+            opacity: 1;
+        }
+        table{
+            float: left;
+            margin-left: 200px;
+        }
+        #right{
+            width: 200px;
+            height: 300px;
+            border: 1px solid black;
+            float: right;
+            margin-right: 200px;
+        }
+    </style>
+
+</head>
+<body>
+<button>反选</button>
+    <button>全选</button>
+<button>移动</button>
+        <table border="1">
+            <thead>
+            <tr>
+                <td>选择</td>
+                <td>姓名</td>
+                <td>性别</td>
+                <td>年龄</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>崔小乾</td>
+                <td>男</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>崔大乾</td>
+                <td>女</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>催催乾</td>
+                <td>男</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>乾乾崔</td>
+                <td>女</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>许腾飞</td>
+                <td>男</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>许疼飞</td>
+                <td>女</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>许飞</td>
+                <td>男</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"/></td>
+                <td>特么</td>
+                <td>女</td>
+                <td>18</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+    <div id="right">
+
+    </div>
+
+</body>
+<script src="jquery-3.1.1.js"></script>
+<script>
+    $(function(){
+        $("tbody>tr:odd").css({"background":"tomato"});   // 1 3 5 7
+        $("tbody>tr:even").css({"background":"green"});   // 0 2 4 6
+        //全选
+        $("button").eq(1).click(function(){
+            $("input").prop("checked","true");
+
+            $("input").each(function(){
+                $(this).parent().parent().css({"background":"black"});
+            })
+            $("tbody>tr:odd").css({"background":"tomato"});   // 1 3 5 7
+            $("tbody>tr:even").css({"background":"green"});
+        })
+        //反选
+        $("button").eq(0).click(function(){
+            $("input").each(function(){
+
+                $(this).prop("checked",!$(this).prop("checked"));
+
+            })
+            $("input").parent().parent().each(function(){
+
+                if( $(this).find(":checked") ){
+                    $(this).css({"background":""});
+                }
+                $("tbody>tr:odd").css({"background":"tomato"});   // 1 3 5 7
+                $("tbody>tr:even").css({"background":"green"});
+            })
+
+        });
+
+//        选中移位
+        $("button").eq(2).click(function(){
+//            alert(11);
+                if($("input").attr("checked")){
+                    $(this).siblings().html().appendTo($("#right"));
+                }
+
+        })
+
+    })
+</script>
+</html>
