@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-3.1.1.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 250px;
+            height: 400px;
+            border: 10px solid #b4cfea;
+            margin: 100px auto;
+            background: #d9edf7;
+        }
+        .display{
+            width: 200px;
+            height: 80px;
+            border: 4px solid #666;
+            margin-left: 25px;
+            font-size: 30px;
+            color: #000;
+        }
+        input[type=button]:hover{
+            background: #ff8040;
+        }
+        input[type=button]{
+            width: 25%;
+            height: 35px;
+            text-align: center;
+            margin-left: 13px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <p>计算器</p>
+    <input type="text" class="display"><br>
+
+    <div class="number">
+        <input type="button" value="0">
+        <input type="button" value="1">
+        <input type="button" value="2">
+        <input type="button" value="3">
+        <input type="button" value="4">
+        <input type="button" value="5">
+        <input type="button" value="6">
+        <input type="button" value="7">
+        <input type="button" value="8">
+        <input type="button" value="9">
+        <input type="button" value=".">
+    </div>
+    <div class="char">
+        <input type="button" value="+">
+        <input type="button" value="-">
+        <input type="button" value="*">
+        <input type="button" value="/">
+    </div>
+    <div class="result">
+        <input type="button" value="=">
+    </div>
+    <div class="delete">
+        <input type="button" value="delete">
+    </div>
+
+</div>
+
+<script>
+
+    var num="";
+    var num2='';
+    var char="";
+    var result;
+    var state=false;
+    $(".number input").click(function(){
+
+//        如果char是空字符串则存取数字1的值，否则存取2的值
+        var value = $(this).val();
+        if(char==""){
+            num = num+value;
+            $("input[type='text']").val(num);
+        }else{
+            num2 = num2+value;
+            $("input[type='text']").val(num+char+num2);
+        }
+
+
+
+    });
+    $(".char input").click(function(){
+        //判断num2是否有值，如果有值的情况下点击运算符表示要做运算操作，输出结果和运算符号，
+        if(num2){
+            switch (char) {
+                case "+":
+                    result = parseFloat(num)+parseFloat(num2);
+                    break;
+                case "-":
+                    result = parseFloat(num)-parseFloat(num2);
+                    break;
+                case "*":
+                    result = parseFloat(num)*parseFloat(num2);
+                    break;
+                case "/":
+                    result = parseFloat(num)/parseFloat(num2);
+                    break;
+
+            }
+
+            //把结果存进变量num
+            num = result;
+            //把num2清空方便再次点击存数字2
+            num2 = "";
+            $("input[type='text']").val(num+char);
+        }
+        char = $(this).val();
+        $("input[type='text']").val(num+char);
+    });
+
+    $(".result input").click(function(){
+
+        switch(char){
+            case "+":
+                result = parseFloat(num) + parseFloat(num2);
+                break;
+            case "-":
+                result = parseFloat(num) - parseFloat(num2);
+                break;
+            case "*":
+                result = parseFloat(num) * parseFloat(num2);
+                break;
+            case "/":
+                result = parseFloat(num) / parseFloat(num2);
+                break;
+        }
+        $("input[type='text']").val(result);
+
+
+//        数值清空，继续下一次
+        char="";
+//        鼠标点击之后变为TRUE
+        start=true;
+
+    })
+
+
+</script>
+</body>
+</html>
