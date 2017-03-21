@@ -1,0 +1,381 @@
+@import url('reset.css');
+* {
+  padding: 0;
+  margin: 0;
+}
+.full {
+  width: 100%;
+  height: 100%;
+}
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.nav {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  background: #333;
+}
+.nav .leftBtn {
+  margin-left: 20px;
+  width: 22px;
+  height: 22px;
+  background: null;
+  background: url(../image/icon.png) no-repeat;
+}
+.nav .leftBtn:hover {
+  background: url(../image/icon.png) no-repeat -50px 0;
+}
+.nav .logo {
+  -webkit-box-flex: 1;
+}
+.nav .logo a {
+  width: 33px;
+  height: 33px;
+  display: inline-block;
+  background: url(../image/icon.png) no-repeat -100px -450px;
+}
+.nav .box2 {
+  width: 124px;
+  height: 35px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center ;
+  text-align: center;
+}
+.nav .box2 div {
+  -webkit-box-flex: 1;
+}
+.nav .box2 .er {
+  width: 22px;
+  height: 22px ;
+  background: url("../image/icon.png") no-repeat -100px 0;
+}
+.nav .box2 .er:hover {
+  background: url("../image/icon.png") no-repeat -150px 0;
+}
+.nav .box2 .search {
+  width: 22px;
+  height: 22px;
+  background: url("../image/icon.png") no-repeat 0 -100px;
+}
+.nav .box2 .search:hover {
+  background: url("../image/icon.png") no-repeat -50px -100px;
+}
+.nav .box2 .gou {
+  width: 22px;
+  height: 22px;
+  background: url("../image/icon.png") no-repeat -100px -100px;
+}
+.nav .box2 .gou:hover {
+  background: url("../image/icon.png") no-repeat -150px -100px;
+}
+.name {
+  width: 100%;
+  height: 80px;
+  background: null;
+  border-bottom: 3px solid #666;
+}
+.name ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+}
+.name ul li {
+  font-size: 25px;
+  font-family: "΢���ź�";
+  -webkit-box-flex: 1;
+  line-height: 75px;
+}
+.name li:hover {
+  color: yellow;
+  border-bottom: 5px solid #666;
+}
+.kind {
+  display: none;
+  width: 100%;
+  height: null;
+  background: null;
+}
+.kind .active {
+  display: block;
+}
+.kind img:hover {
+  opacity: 0.7;
+}
+.kind .nv {
+  width: 100%;
+  height: null;
+  background: null;
+}
+.kind .nv .nv1 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+  width: 100%;
+  height: null;
+  background: null;
+}
+.kind .nv .nv1 .tu {
+  width: 22%;
+  height: null;
+  background: null;
+  -webkit-box-flex: 1;
+}
+.kind .nv .nv1 .tu img {
+  width: 85%;
+  height: 75%;
+  border: 1px solid gainsboro;
+}
+.kind .nv .nv1 .tu p {
+  font-size: 12px;
+  color: grey;
+}
+.kind .nv .nv2 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+  width: 100%;
+  height: null;
+  background: null;
+}
+.kind .nv .nv2 .tu {
+  width: 22%;
+  height: null;
+  background: null;
+  -webkit-box-flex: 1;
+}
+.kind .nv .nv2 .tu img {
+  width: 85%;
+  height: 75%;
+  border: 1px solid gainsboro;
+}
+.kind .nv .nv2 .tu p {
+  font-size: 12px;
+  color: grey;
+}
+.kind .nan {
+  width: 100%;
+  height: null;
+  background: null;
+}
+.kind .nan .nan1 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+  width: 100%;
+  height: null;
+  background: null;
+}
+.kind .nan .nan1 .tu {
+  width: 22%;
+  height: null;
+  background: null;
+  -webkit-box-flex: 1;
+}
+.kind .nan .nan1 .tu img {
+  width: 85%;
+  height: 75%;
+  border: 1px solid gainsboro;
+}
+.kind .nan .nan1 .tu p {
+  font-size: 12px;
+  color: grey;
+}
+.kind .nan .nan2 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+  width: 100%;
+  height: null;
+  background: null;
+}
+.kind .nan .nan2 .tu {
+  width: 22%;
+  height: null;
+  background: null;
+  -webkit-box-flex: 1;
+}
+.kind .nan .nan2 .tu img {
+  width: 85%;
+  height: 75%;
+  border: 1px solid gainsboro;
+}
+.kind .nan .nan2 .tu p {
+  font-size: 12px;
+  color: grey;
+}
+.kind .yun {
+  width: 100%;
+  height: null;
+  background: null;
+}
+.kind .yun .yun1 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+  width: 100%;
+  height: null;
+  background: null;
+}
+.kind .yun .yun1 .tu {
+  width: 22%;
+  height: null;
+  background: null;
+  -webkit-box-flex: 1;
+}
+.kind .yun .yun1 .tu img {
+  width: 85%;
+  height: 75%;
+  border: 1px solid gainsboro;
+}
+.kind .yun .yun1 .tu p {
+  font-size: 12px;
+  color: grey;
+}
+.kind .yun .yun2 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+  width: 100%;
+  height: null;
+  background: null;
+}
+.kind .yun .yun2 .tu {
+  width: 22%;
+  height: null;
+  background: null;
+  -webkit-box-flex: 1;
+}
+.kind .yun .yun2 .tu img {
+  width: 85%;
+  height: 75%;
+  border: 1px solid gainsboro;
+}
+.kind .yun .yun2 .tu p {
+  font-size: 12px;
+  color: grey;
+}
+.kind .xie {
+  width: 100%;
+  height: null;
+  background: null;
+}
+.kind .xie .xie1 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+  width: 100%;
+  height: null;
+  background: null;
+}
+.kind .xie .xie1 .tu {
+  width: 22%;
+  height: null;
+  background: null;
+  -webkit-box-flex: 1;
+}
+.kind .xie .xie1 .tu img {
+  width: 85%;
+  height: 75%;
+  border: 1px solid gainsboro;
+}
+.kind .xie .xie1 .tu p {
+  font-size: 12px;
+  color: grey;
+}
+.kind .xie .xie2 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+  width: 100%;
+  height: null;
+  background: null;
+}
+.kind .xie .xie2 .tu {
+  width: 22%;
+  height: null;
+  background: null;
+  -webkit-box-flex: 1;
+}
+.kind .xie .xie2 .tu img {
+  width: 85%;
+  height: 75%;
+  border: 1px solid gainsboro;
+}
+.kind .xie .xie2 .tu p {
+  font-size: 12px;
+  color: grey;
+}
+.kind .xiang {
+  width: 100%;
+  height: null;
+  background: null;
+}
+.kind .xiang .xiang1 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+  width: 100%;
+  height: null;
+  background: null;
+}
+.kind .xiang .xiang1 .tu {
+  width: 22%;
+  height: null;
+  background: null;
+  -webkit-box-flex: 1;
+}
+.kind .xiang .xiang1 .tu img {
+  width: 85%;
+  height: 75%;
+  border: 1px solid gainsboro;
+}
+.kind .xiang .xiang1 .tu p {
+  font-size: 12px;
+  color: grey;
+}
+.kind .xiang .xiang2 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+  width: 100%;
+  height: null;
+  background: null;
+}
+.kind .xiang .xiang2 .tu {
+  width: 22%;
+  height: null;
+  background: null;
+  -webkit-box-flex: 1;
+}
+.kind .xiang .xiang2 .tu img {
+  width: 85%;
+  height: 75%;
+  border: 1px solid gainsboro;
+}
+.kind .xiang .xiang2 .tu p {
+  font-size: 12px;
+  color: grey;
+}
