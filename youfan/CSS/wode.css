@@ -1,0 +1,249 @@
+@import url('reset.css');
+.full {
+  width: 100%;
+  height: 100%;
+}
+html,
+body,
+.warp {
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.nav {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  background: #333;
+}
+.nav .leftBtn {
+  margin-left: 20px;
+  width: 22px;
+  height: 22px;
+  background: null;
+  background: url(../image/icon.png) no-repeat;
+}
+.nav .leftBtn:hover {
+  background: url(../image/icon.png) no-repeat -50px 0;
+}
+.nav .logo {
+  -webkit-box-flex: 1;
+}
+.nav .logo a {
+  width: 33px;
+  height: 33px;
+  display: inline-block;
+  background: url(../image/icon.png) no-repeat -100px -450px;
+}
+.nav .box2 {
+  width: 124px;
+  height: 35px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center ;
+  text-align: center;
+}
+.nav .box2 div {
+  -webkit-box-flex: 1;
+}
+.nav .box2 .er {
+  width: 22px;
+  height: 22px ;
+  background: url("../image/icon.png") no-repeat -100px 0;
+}
+.nav .box2 .er:hover {
+  background: url("../image/icon.png") no-repeat -150px 0;
+}
+.nav .box2 .search {
+  width: 22px;
+  height: 22px;
+  background: url("../image/icon.png") no-repeat 0 -100px;
+}
+.nav .box2 .search:hover {
+  background: url("../image/icon.png") no-repeat -50px -100px;
+}
+.nav .box2 .gou {
+  width: 22px;
+  height: 22px;
+  background: url("../image/icon.png") no-repeat -100px -100px;
+}
+.nav .box2 .gou:hover {
+  background: url("../image/icon.png") no-repeat -150px -100px;
+}
+.banner {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: 150px;
+  background: null;
+}
+.banner p {
+  font-size: 16px;
+}
+.a2 {
+  width: 100%;
+  height: 550px;
+  background: null;
+  margin-top: 60px;
+  border-top: 5px solid gainsboro;
+}
+.a2 .one {
+  width: 100%;
+  height: 55px;
+  background: null;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+}
+.a2 .one p {
+  -webkit-box-flex: 1;
+  font-size: 20px;
+}
+.a2 .one p:hover {
+  color: tomato;
+}
+.a2 .two {
+  width: 100%;
+  height: 50px;
+  background: null;
+  border-top: 5px solid gainsboro;
+}
+.a2 .two ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+}
+.a2 .two ul li {
+  -webkit-box-flex: 1;
+  margin-left: 70px;
+}
+.a2 .two ul li .a {
+  width: 35px;
+  height: 35px;
+  background: url("../image/icon.png") no-repeat 0px -650px;
+}
+.a2 .two ul li .b {
+  width: 35px;
+  height: 35px;
+  background: url("../image/icon.png") no-repeat -100px -650px;
+}
+.a2 .two ul li .c {
+  width: 35px;
+  height: 35px;
+  background: url("../image/icon.png") no-repeat 0px -700px;
+}
+.a2 .two ul li .d {
+  width: 35px;
+  height: 35px;
+  background: url("../image/icon.png") no-repeat -100px -700px;
+}
+.a2 .two ul li .e {
+  width: 35px;
+  height: 35px;
+  background: url("../image/icon.png") no-repeat 0px -750px;
+}
+.a2 .two ul li .f {
+  width: 35px;
+  height: 35px;
+  background: url("../image/icon.png") no-repeat -100px -750px;
+}
+.a2 .three {
+  width: 100%;
+  height: 55px;
+  background: null;
+  border-top: 5px solid gainsboro;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+}
+.a2 .three p {
+  -webkit-box-flex: 1;
+  font-size: 18px;
+  color: #666;
+}
+.a2 .three p:hover {
+  color: tomato;
+}
+.a2 .four {
+  width: 100%;
+  height: 55px;
+  background: null;
+  border-top: 5px solid gainsboro;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+}
+.a2 .four p {
+  -webkit-box-flex: 1;
+  font-size: 18px;
+  color: #666;
+}
+.a2 .four p:hover {
+  color: tomato;
+}
+.a2 .five {
+  width: 100%;
+  height: 55px;
+  background: null;
+  border-top: 5px solid gainsboro;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+}
+.a2 .five p {
+  -webkit-box-flex: 1;
+  font-size: 18px;
+  color: #666;
+}
+.a2 .five p:hover {
+  color: tomato;
+}
+.a2 .six {
+  width: 100%;
+  height: 55px;
+  background: null;
+  border-top: 5px solid gainsboro;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+}
+.a2 .six p {
+  -webkit-box-flex: 1;
+  font-size: 18px;
+  color: #666;
+}
+.a2 .six p:hover {
+  color: tomato;
+}
+.a2 .seven {
+  width: 100%;
+  height: 55px;
+  background: null;
+  border-top: 5px solid gainsboro;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+}
+.a2 .seven p {
+  -webkit-box-flex: 1;
+  font-size: 18px;
+  color: #666;
+}
+.a2 .seven p:hover {
+  color: tomato;
+}
