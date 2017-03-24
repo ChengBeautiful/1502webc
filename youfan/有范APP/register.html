@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/shop.js"></script>
+    <link rel="stylesheet" href="CSS/register.css"/>
+    <style>
+        label.error{color:red;font-size:13px;z-index: 9;position: absolute;}
+    </style>
+</head>
+<body>
+<div class="warp">
+    <div class="header">
+        <a href="#"></a>
+        <a href="#"></a>
+    </div>
+    <div class="kuang">
+        <p><a href="index.html" base="_self">首页</a></p>
+        <p><a href="fenlei.html" base="_self">分类</a></p>
+        <p><a href="dapei.html" base="_self"  style="color: red;">搭配</a></p>
+        <p><a href="details.html" base="_self">详情</a></p>
+        <p><a href="search.html" base="_self">搜索</a></p>
+        <p><a href="login.html" base="_self">登录</a></p>
+        <p><a href="wode.html" base="_self">我的</a></p>
+        <p><a href="购物袋.html" base="_self">购物袋</a></p>
+    </div>
+    <div class="register">
+        <div class="rg_left">
+            <div class="rg_img">
+                <img src="image/denglu/denglu-pic01.png" alt=""/>
+                <span>有范</span><span>是一种生活态度</span>
+            </div>
+        </div>
+        <div class="rg_right">
+            <span class="rg-spanone">注册有范</span>
+            <div class="rg-box">
+                <form action="#" id="form">
+                    <p class="uval"><input type="text" id="user" class="user" name="user" placeholder="用户名/手机号"/><span></span></p>
+                    <p><input type="password"  id="pwd" class="pwd" name="pwd" placeholder="密码"/></p>
+                    <p><input type="password" class="pwdtwo" name="pwdtwo" placeholder="密码确认"/></p>
+                    <p><input type="text" id="phone" class="phone" name="phone" placeholder="手机号" maxlength="11"/></p>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <input type="submit" class="submit" value="注册"/>
+                </form>
+                <div class="ji">
+                    <span><input type="checkbox"/>记住登录状态</span><a href="login.html" base="_self">马上登陆</a><a href="javascript:alert('请联系客服电话:110')">忘记密码|</a>
+                </div>
+                <p class="dithree">
+                    <span>第三方登录：</span>
+                    <a href="javescript:;"></a>
+                    <a href="javescript:;"></a>
+                    <a href="javescript:;"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="rg-bottom">
+        Copyright @ 2015-2016 funwear.com 沪ICP备05033127号
+    </div>
+</div>
+</body>
+<script>
+    $('#form').validate({
+        onsubmit:true,
+        onkeyup:false,
+        rules:{
+            user:{
+                required:true,
+                rangelength:[6,10],
+            },
+            pwd:{
+                required:true,
+                digits:true,
+                rangelength:[6,10],
+            },
+            pwdtwo:{
+                required:true,
+                digits:true,
+                equalTo:"#pwd",
+                rangelength:[6,10],
+            },
+            phone:{
+                required:true,
+                digits:true,
+                rangelength:[11,11]
+            }
+        },
+        messages:{
+            user:{
+                required:"必填",
+                rangelength:"必须6-10位且不能全为汉字",
+            },
+            pwd:{
+                required:"必填",
+                digits:"必须为纯数字",
+                rangelength:"必须6-10位",
+            },
+            pwdtwo:{
+                required:"必填",
+                digits:"必须为纯数字",
+                equalTo:"两次输入密码不一致",
+                rangelength:"必须6-10位",
+            },
+            phone:{
+                required:"必填",
+                digits:"必须为纯数字",
+                rangelength:"必须11位"
+            }
+        },submitHandler:function(form){
+            $.ajax({
+                url:'http://www.petrichoro.com/ports/index.php/Home/User/regist',
+                data:{
+                    user:$('#user').val(),
+                    psd:$('#pwd').val(),
+                    phone:$('#phone').val(),
+                },
+                dataType:"jsonp",
+                type:"post",
+                async:true,
+                success:function(msg){
+                    console.log(msg);
+                    $.each(msg,function(i,j){
+                        console.log(j)
+                        if(j==='用户名已存在'){
+                            $('.uval span').html('用户名已存在').css({'color':'red'});
+                        }
+                        if(j==="用户名应该在6-16位之间。"){
+                            $('.uval span').html('用户名应该在6-16位之间且不能全为汉字').css({'color':'red'});
+                        }
+                        if(j==='注册成功'){
+                            location.href="login.html"
+                        }
+                    });
+                }
+            })
+        }
+    })
+</script>
+</html>

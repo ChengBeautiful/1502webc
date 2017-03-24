@@ -161,10 +161,6 @@ html {
 .banner .dl1 dd {
   overflow: hidden;
   border: 1px solid #D9D9D9;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 .banner .dd1 {
   -webkit-box-flex: 1;
@@ -206,6 +202,7 @@ html {
   -webkit-box-flex: 1;
 }
 .select {
+  display: none;
   position: absolute;
   left: 0;
   top: 44px;

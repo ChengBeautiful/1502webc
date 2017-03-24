@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="CSS/gouwu.css"/>
+    <link rel="stylesheet" href="CSS/reset.css"/>
+    <script src="jquery-3.1.1.js"></script>
+</head>
+<body>
+<!--nav-->
+<div class="nav">
+    <div class="btn-left"></div>
+    <div class="btn-logo">
+        <p>购物袋</p>
+    </div>
+    <div class="btn">
+        <div class="btn-a"></div>
+        <div class="btn-b"></div>
+        <div class="btn-c"></div>
+    </div>
+</div>
+<!--banner-->
+<div class="banner">
+    <div class="ban-left"><a href="#"><img src="image/gouwuche/1.jpg" alt=""/></a></div>
+    <div class="ban-right"><a href="#"><img src="image/gouwuche/2.jpg" alt=""/></a></div>
+</div>
+<!--boday-->
+<div class="boday">
+    <div class="bod-top">
+        <ul>
+            <li>商品标签</li>
+            <li>单价(元)</li>
+            <li>数量</li>
+            <li>返范票</li>
+            <li>小计(元)</li>
+            <li>操作</li>
+        </ul>
+
+    </div>
+    <div class="bod-on">
+        <div class="on">
+            <input type="checkbox"/>
+            <img src="image/gouwuche/3.jpg"/>
+            <span>Life After Life袋鼠兜帽衬衫</span>
+            <p>颜色:黑色 <br/>尺码:XXL</p>
+
+        </div>
+        <div class="dan">
+            <p>￥299元</p>
+        </div>
+        <div class="shu">
+            <button>-</button>
+            <input type="text" value="0"/>
+            <button>+</button>
+        </div>
+        <div class="fan">
+            <p>0</p>
+        </div>
+        <div class="xiao">
+            <p>￥299</p>
+        </div>
+        <div class="cao">
+            <button class="shan">删除</button>
+            <button>移入收藏</button>
+        </div>
+    </div>
+    <div class="bod-on">
+        <div class="on">
+            <input type="checkbox"/>
+            <img src="image/gouwuche/4.jpg"/>
+            <span>Life After Life袋鼠兜帽衬衫</span>
+            <p>颜色:黑色 <br/>尺码:XXL</p>
+
+        </div>
+        <div class="dan1">
+            <p>￥299元</p>
+        </div>
+        <div class="shu1">
+            <button>-</button>
+            <input type="text" value="0"/>
+            <button>+</button>
+        </div>
+        <div class="fan">
+            <p>0</p>
+        </div>
+        <div class="xiao">
+            <p>￥299</p>
+        </div>
+        <div class="cao">
+            <button class="shan">删除</button>
+            <button>移入收藏</button>
+        </div>
+    </div>
+    <div class="bod-on">
+        <div class="on">
+            <input type="checkbox"/>
+            <img src="image/gouwuche/5.jpg"/>
+            <span>Life After Life袋鼠兜帽衬衫</span>
+            <p>颜色:黑色 <br/>尺码:XXL</p>
+
+        </div>
+        <div class="dan2">
+            <p>￥299元</p>
+        </div>
+        <div class="shu2">
+            <button>-</button>
+            <input type="text" value="0"/>
+            <button>+</button>
+        </div>
+        <div class="fan">
+            <p>0</p>
+        </div>
+        <div class="xiao">
+            <p>￥299</p>
+        </div>
+        <div class="cao">
+            <button class="shan">删除</button>
+            <button>移入收藏</button>
+        </div>
+    </div>
+</div>
+<div class="bod-fot">
+
+    <input type="checkbox"/> <span>全选</span>
+    <p>批量删除&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;批量移入收钱夹</p>
+
+
+    <em>商品总价:￥9999.00</em>
+</div>
+
+<div class="aaa">
+    <button class="left">再看看</button>
+    <button class="right">去结算</button>
+</div>
+
+<!--foot-->
+<div class="cou">
+    <div>-</div><span>凑单商品</span>
+    <button> > </button>
+    <button> < </button>
+
+</div>
+
+<ul class="cou1">
+    <li><img src="image/gouwuche/5.jog.jpg"/></li>
+    <li><img src="image/gouwuche/6.jpg"/></li>
+    <li><img src="image/gouwuche/7.jpg"/></li>
+    <li><img src="image/gouwuche/8,.jpg"/></li>
+    <li><img src="image/gouwuche/9.jpg"/></li>
+    <li><img src="image/gouwuche/10.jpg"/></li>
+</ul>
+
+</body>
+<script>
+    var num=0;
+    var num5=0;
+    var num6=0;
+    var num2=299;
+    var num3=299;
+    var num4=299;
+    $(".shu button").eq(1).click(function(){
+       num++;
+        num2+=299;
+        $(".shu input").val(num);
+        $(".dan p").html("￥"+num2+"元");
+    });
+    $(".shu button").eq(0).click(function(){
+        num--;
+        num2-=299;
+        if(num<0){
+            num=0;
+        }
+        if(num2<299){
+            num2=299;
+        }
+        $(".shu input").val(num);
+        $(".dan p").html("￥"+num2+"元");
+    });
+    $(".shu1 button").eq(1).click(function(){
+        num5++;
+        num3+=299;
+        $(".shu1 input").val(num);
+        $(".dan1 p").html("￥"+num3+"元");
+    });
+    $(".shu1 button").eq(0).click(function(){
+        num5--;
+        num3-=299;
+        if(num5<0){
+            num5=0;
+        }
+        if(num3<299){
+            num3=299;
+        }
+        $(".shu1 input").val(num5);
+        $(".dan1 p").html("￥"+num3+"元");
+    });
+
+
+    $(".shu2 button").eq(1).click(function(){
+        num6++;
+        num4+=299;
+        $(".shu2 input").val(num6);
+        $(".dan2 p").html("￥"+num4+"元");
+    });
+    $(".shu2 button").eq(0).click(function(){
+        num6--;
+        num4-=299;
+        if(num6<0){
+            num6=0;
+        }
+        if(num4<299){
+            num4=299;
+        }
+        $(".shu2 input").val(num6);
+        $(".dan2 p").html("￥"+num4+"元");
+    })
+</script>
+</html>

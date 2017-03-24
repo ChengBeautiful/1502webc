@@ -1,0 +1,120 @@
+@import url('reset.css');
+.full {
+  width: 100%;
+  height: 100%;
+}
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.header {
+  text-align: center;
+  -webkit-box-align: center ;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 44px;
+  background: black;
+  margin: 0 auto;
+  position: relative;
+}
+.header p {
+  width: 24px;
+  height: 24px;
+  background: null;
+  margin-left: 12px;
+  background: url(../image/icon.png) 0 0 no-repeat;
+  top: 10px;
+}
+.header p:hover {
+  cursor: pointer;
+  background: url(../image/icon.png) -50px 0px no-repeat;
+}
+.header .sc {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: null;
+  background: url(../image/icon.png) 0 -100px no-repeat;
+  left: 900px;
+  top: 12px;
+}
+.header h1 {
+  margin-left: 60px;
+  -webkit-box-flex: 1;
+}
+.header h1 input {
+  border: none;
+  border: 1px solid #726966;
+  color: white;
+  outline: none;
+  display: inline-block;
+  width: 342px;
+  height: 25px;
+  background: black;
+}
+.header #se1 {
+  color: white;
+  margin-left: 20px;
+  width: 62px;
+  height: 25px;
+  background: black;
+}
+.header #se2 {
+  color: white;
+  margin-left: 20px;
+  width: 62px;
+  height: 25px;
+  background: black;
+}
+.select {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 44px;
+  width: 135px;
+  height: 300px;
+  background: #333333;
+  z-index: 999;
+  overflow: hidden;
+}
+.select li {
+  margin-left: 8px;
+  line-height: 35px;
+  list-style: none;
+}
+.select li a {
+  color: white;
+  font-size: 20px;
+}
+.search {
+  margin: 0 auto;
+  width: 1020px;
+  height: 420px;
+  background: null;
+  background: url("../image/sousuo/sousuo-bg.png") no-repeat;
+}
+.search table {
+  text-align: center;
+  margin-left: 260px;
+  width: 520px;
+  height: 200px;
+  font-size: 20px;
+}
+.search form {
+  margin-left: 260px;
+}
+.search p {
+  font-size: 20px;
+  margin-left: 260px;
+}
+.search h3 {
+  margin-left: 260px;
+}

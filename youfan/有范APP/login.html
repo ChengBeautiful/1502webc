@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>登录</title>
+     <link rel="stylesheet" href="CSS/login.css" />
+     
+     <script src="js/jquery-3.1.1.js"></script>
+     <script src="js/select.js"></script>
+     
+     <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+</head>
+<body>
+	<div class="warp">
+	<div class="header">
+		<p></p>
+	<h1><a></a></h1>
+		<ul class="ul1">
+			<li class="li1"><a href="javascript:alert('对不起，您的设备暂不支持扫一扫功能！')"></a></li>
+			<li class="li2"><a href="javascript:alert('对不起，您未登录请先登录')"></a></li>
+			<li class="li3"><a href="javascript:alert('对不起，您未登录请先登录')"></a></li>
+		</ul>
+	</div>	
+	<div class="select">
+		<ul>
+			<li><a>首页</a></li>
+			<li><a href="javascript:alert('对不起，您未登录请先登录')">分类</a></li>
+			<li><a href="javascript:alert('对不起，您未登录请先登录')">搭配</a></li>
+			<li><a href="javascript:alert('对不起，您未登录请先登录')">详情</a></li>
+			<li><a href="javascript:alert('对不起，您未登录请先登录')">搜索</a></li>
+			<!--<li><a href="javascript:alert('对不起，您未登录请先登录')">登录</a></li>-->
+			<li><a href="javascript:alert('对不起，您未登录请先登录')">我的</a></li>
+			<li><a href="javascript:alert('对不起，您未登录请先登录')">购物袋</a></li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="main-l">
+				<p><img src="image/denglu/denglu-pic01.png"></p>
+			<ul>
+		    <li>有范</li>
+		    <li>是一种生活态度</li>
+			</ul>
+		</div>
+		<div class="line"></div>
+		<div class="main-r">
+			<p>登录有范</p>
+			  <form action="#" id="form" class="login-form">
+			  	
+                    <p id="form1"><a class="p1"></a><input type="text" id="user" class="user" name="user" placeholder="用户名/手机号"/></p>
+                    <p id="form1"><a class="p2"></a><input type="text" id="pwd" class="pwd" name="pwd" placeholder="密码"/></p>
+                    <b></b>
+                    <span></span>
+                    <span></span>
+                    <input type="submit" class="submit" value="登录"/>
+                </form>
+			
+			<ul>
+				<li class="lic"><input type="checkbox"></li>
+				<li><a href="">记住登录状态</a></li>
+				<li class="lip"><a href="javascript:alert('请联系客服电话:110')">忘记密码</a>|<a href="register.html">立即注册</a>
+					
+				</li>
+				
+			</ul>
+			<dl>
+				<dt>第三方登录方式:</dt>
+				<dd class="d1"><a href="javascript:;"></a></dd>
+				<dd class="d2"><a href="javascript:;"></a></dd>
+				<dd class="d3"><a href="javascript:;"></a></dd>
+			</dl> 
+		</div>
+		</div>
+	</div><!--warp-->
+</body>
+</html>
+<script>
+    $('#form').validate({
+        onsubmit:true,
+        onkeyup:false,
+        rules:{
+            user:{
+                required:true,
+                rangelength:[6,10],
+            },
+            pwd:{
+                required:true,
+                digits:true,
+                rangelength:[6,10],
+            }
+        },
+        messages:{
+            user:{
+                required:"必填",
+                rangelength:"必须6-10位",
+            },
+            pwd:{
+                required:"必填",
+                digits:"必须为纯数字",
+                rangelength:"必须6-10位",
+            }
+        },submitHandler:function(form){
+            $.ajax({
+                url:'http://www.petrichoro.com/ports/index.php/Home/User/login',
+                data:{
+                    user:$('#user').val(),
+                    psd:$('#pwd').val(),
+                },
+                dataType:"jsonp",
+                type:"post",
+                async:true,
+                success:function(msg){
+                    $.each(msg,function(i,j){
+                        if(j==='登陆成功'){
+                            location.href="index.html";
+                        }
+                    });
+                }
+            })
+        }
+    })
+	
+	
+	
+//$("#btn").click(function(){
+//	if($('#user').val()=="xutengfei"&&$('#pwd').val()=="123456"){
+//		alert(登录成功)
+//		location.href='index.html';
+//	}else{
+//		location.href='';
+//	}
+//		
+//	})
+</script>

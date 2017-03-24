@@ -1,0 +1,277 @@
+@import url('reset.css');
+.full {
+  width: 100%;
+  height: 100%;
+}
+html,
+body,
+.warp {
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.header {
+  text-align: center;
+  -webkit-box-align: center ;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 44px;
+  background: black;
+  margin: 0 auto;
+  position: relative;
+}
+.header p {
+  width: 24px;
+  height: 24px;
+  background: null;
+  margin-left: 12px;
+  background: url(../image/icon.png) 0 0 no-repeat;
+  top: 10px;
+}
+.header p:hover {
+  cursor: pointer;
+  background: url(../image/icon.png) -50px 0px no-repeat;
+}
+.header h1 {
+  margin-left: 60px;
+  -webkit-box-flex: 1;
+}
+.header h1 a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: null;
+  background: url(../image/icon.png) -100px -450px no-repeat;
+}
+.header .ul1 {
+  text-align: center;
+  -webkit-box-align: center ;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 152px;
+  height: 34px;
+  background: null;
+}
+.header .ul1 li {
+  -webkit-box-flex: 1;
+  width: 24px;
+  height: 24px;
+  background: null;
+}
+.header .ul1 li a {
+  width: 24px;
+  height: 24px;
+  background: null;
+}
+.header .ul1 .li1 a {
+  display: inline-block;
+  background: url(../image/icon.png) -100px 0 no-repeat;
+}
+.header .ul1 .li1 a:hover {
+  background: url(../image/icon.png) -150px 0 no-repeat;
+}
+.header .ul1 .li2 a {
+  display: inline-block;
+  background: url(../image/icon.png) 0 -100px no-repeat;
+}
+.header .ul1 .li2 a:hover {
+  background: url(../image/icon.png) -50px -100px no-repeat;
+}
+.header .ul1 .li3 a {
+  display: inline-block;
+  background: url(../image/icon.png) -100px -100px no-repeat;
+}
+.header .ul1 .li3 a:hover {
+  background: url(../image/icon.png) -150px -100px no-repeat;
+}
+.select {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 44px;
+  width: 135px;
+  height: 300px;
+  background: #333333;
+  z-index: 999;
+  overflow: hidden;
+}
+.select li {
+  margin-left: 8px;
+  line-height: 35px;
+  list-style: none;
+}
+.select li a {
+  color: white;
+  font-size: 20px;
+}
+.main {
+  text-align: center;
+  -webkit-box-align: center ;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 64%;
+  height: 642px;
+  margin-top: 92px;
+  margin: 0 auto;
+}
+.main-l p {
+  width: 290px;
+  height: 290px;
+  background: null;
+  border: 2px solid#D9D9D9;
+}
+.main-l p img {
+  width: 290px;
+  height: 290px;
+  background: null;
+}
+.main-l ul {
+  width: 290px;
+  height: auto;
+  background: null;
+  text-align: center;
+  -webkit-box-align: center ;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.main-l ul li {
+  font-size: 18px;
+  -webkit-box-flex: 1;
+}
+.line {
+  width: 1px;
+  height: 502px;
+  background: #ccc;
+  margin-left: 100px;
+}
+.main-r p {
+  width: 327px;
+  height: 24px;
+  background: null;
+  border-bottom: 1px solid #D9D9D9;
+  font-size: 16px;
+  margin: 10px 30px;
+}
+.main-r input {
+  border: none;
+  width: 282px;
+  height: 48px;
+  background: null;
+  margin: 0px 35px;
+  font-size: 16px;
+  outline: none;
+}
+.main-r #form1 {
+  border: 1px solid #D9D9D9;
+  position: relative;
+  width: 320px;
+  height: 48px;
+  background: null;
+  margin: 20px 35px;
+}
+.main-r #form2 {
+  border: 1px solid #D9D9D9;
+  position: relative;
+  width: 320px;
+  height: 48px;
+  background: null;
+  margin: 0px 35px;
+}
+.main-r .p1 {
+  display: block;
+  position: absolute;
+  width: 21px;
+  height: 23px;
+  background: null;
+  background: url(../image/icon.png) no-repeat 0px -350px;
+  top: 10px;
+  left: 10px;
+}
+.main-r .p2 {
+  display: block;
+  position: absolute;
+  width: 21px;
+  height: 23px;
+  background: null;
+  background: url(../image/icon.png) no-repeat -50px -350px;
+  top: 10px;
+  left: 10px;
+}
+.main-r .submit {
+  margin: 10px 30px;
+  color: white;
+  font-size: 16px;
+  width: 320px;
+  height: 48px;
+  background: black;
+  border: none;
+}
+.main-r ul {
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #D9D9D9;
+  text-align: center;
+  -webkit-box-align: center ;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 330px;
+  height: 28px;
+  background: null;
+}
+.main-r ul .lic {
+  margin: -6px 20px;
+}
+.main-r ul .lic input {
+  width: 16px;
+  height: 16px;
+  background: null;
+}
+.main-r ul .lip {
+  text-align: center;
+  -webkit-box-align: center ;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.main-r ul .lip a {
+  -webkit-box-flex: 1;
+  display: block;
+}
+.main-r ul li {
+  -webkit-box-flex: 1;
+}
+.main-r dl {
+  margin: 0 20px;
+  width: 330px;
+  height: 26px;
+  background: null;
+  text-align: center;
+  -webkit-box-align: center ;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.main-r dl dt {
+  -webkit-box-flex: 1;
+}
+.main-r dl dd {
+  -webkit-box-flex: 1;
+}
+.main-r dl dd a {
+  width: 26px;
+  height: 26px;
+  background: null;
+  display: block;
+}
+.main-r dl .d1 a {
+  background: url(../image/icon.png) no-repeat -100px -500px;
+}
+.main-r dl .d2 a {
+  background: url(../image/icon.png) no-repeat -100px -550px;
+}
+.main-r dl .d3 a {
+  background: url(../image/icon.png) no-repeat -100px -600px;
+}

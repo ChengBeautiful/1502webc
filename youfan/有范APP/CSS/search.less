@@ -1,0 +1,144 @@
+@import url('reset.css');
+.f(@f:left){
+    float:@f;
+}
+.r(@r:right){
+    float:@r;
+}
+.full{
+    width: 100%;
+    height: 100%;
+   
+}
+.box(@dir:horizontal){
+            
+            display: -webkit-box;
+            -webkit-box-orient:@dir;                                                                      
+           } 
+           
+       
+html,body,.warp{
+      
+    .full;
+    position: relative;
+   
+}
+.warp{
+   .box(vertical);
+}
+.whb(@w,@h,@b){
+    width:@w;
+    height:@h;
+    background:@b;
+}
+
+.header{
+   position: relative;
+    
+    text-align: center;
+    -webkit-box-align:center ;
+   .box;
+   .whb(100%,44px,black);
+   margin: 0 auto;                                                           
+      position: relative;   
+                 p{
+     .whb(24px,24px,null);
+       margin-left: 12px;
+       background: url(../image/icon.png)0 0 no-repeat;
+      top: 10px;
+      
+        } 
+      
+      
+     p:hover{
+        cursor: pointer;
+      background: url(../image/icon.png)-50px 0px no-repeat;
+    } 
+    .sc{
+        position: absolute;
+          .whb(24px,24px,null);
+            background:url(../image/icon.png) 0 -100px no-repeat;
+        left: 900px;
+        top: 12px;
+     }   
+        
+        
+    
+     h1 {
+         margin-left: 60px;
+         -webkit-box-flex:1; 
+        
+     }
+   h1 input{ 
+     
+       border: none;
+         border: 1px solid #726966;
+       color: white;
+       outline: none;
+       display: inline-block;
+       .whb(342px,25px,black);
+      
+         } 
+           
+       #se1{
+           color: white;
+           margin-left: 20px;
+           .whb(62px,25px,black);
+       }
+       #se2{
+           color: white;
+           margin-left: 20px;
+          .whb(62px,25px,black); 
+       }
+  }      
+       
+         
+      
+   
+ 
+
+  .select{
+             display: none;
+              position: absolute;
+                 left: 0;
+              top: 44px;
+              width: 135px;
+              height: 300px;
+              background: #333333;
+              z-index: 999;
+               overflow: hidden;
+               li{
+                   margin-left: 8px;
+                   line-height: 35px;
+                   a{
+                       color: white;
+                       font-size: 20px;
+                   }
+                   list-style: none;
+               }
+          }
+          .search{
+              margin: 0 auto;
+               .whb(1020px,420px,null); 
+                background:url("../image/sousuo/sousuo-bg.png") no-repeat;
+            
+              table {
+                text-align: center;
+                margin-left: 260px;
+                width: 520px;
+                height: 200px;
+                font-size: 20px;
+            }
+            form{
+               margin-left: 260px;
+            }
+            p {
+                font-size: 20px;
+                margin-left: 260px;
+            }
+            
+            h3 {
+                margin-left: 260px;
+            }  
+              
+          }

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>搜索</title>
+	<script src="js/jquery-3.1.1.js"></script>
+	<link rel="stylesheet" href="CSS/search.css" />
+	<script src="js/select.js"></script>
+	<!--<script src="js/search.js"></script>-->
+</head>
+<body>
+	<div class="warp">
+	<div class="header">
+		<p></p>
+		<div class="sc"></div>
+		<select id="se1"></select>
+		<select id="se2"></select>
+	<h1><input type="search"></h1>
+		
+	</div>
+	<div class=                                                                                                                                            "select">
+		<ul>
+			<li><a href="index.html">首页</a></li>
+			<li><a href="fenlei.html">分类</a></li>
+			<li><a href="dapei.html">搭配</a></li>
+			<li><a href="details.html">详情</a></li>
+			<li><a href="login.html">登录</a></li>
+			<li><a href="">我的</a></li>
+			<li><a href="">购物袋</a></li>
+			</ul>
+			
+		</div>
+		<div class="search">
+			<p></p>
+			<form></form>
+			<table border="1">
+			<tr>
+				<td>日期</td>
+				<td>风力</td>
+				<td>风向</td>
+				<td>高温</td>
+				<td>低温</td>
+				<td>天气类型</td>
+			</tr>
+		</table>
+		</div>
+		
+	</div><!--warp-->
+	
+</body>
+</html>
+<script>
+   
+	 var dataList = null;
+	$.ajax({
+		url: "city.json",
+		type: "get",
+		dataType: "json",
+		data: "",
+		success: function(data) {
+			
+			datalist = data;
+            
+			$("#se1").append('<option>' + '请选择' + '</option>');
+			$.each(datalist.citylist, function(i, j) {
+				
+			$('#se1').append('<option>' + j.p + '</option>');
+			})
+			}
+	});
+				
+					$('#se1').change(function() {
+			           $("#se2 option").remove();
+					var $se1 = $(this).val();
+
+					
+					$('#se2').append('<option>' + '请选择' + '</option>');
+					$.each(datalist.citylist, function(i, j) {
+						if($se1 == j.p) {
+
+							$.each(j.c, function(i, val) {
+								$('#se2').append('<option>' + val.n + '</option>');                         
+							});
+						}
+					})
+				})
+					
+					$(".sc").click(function() {
+					$("table").empty();
+					$("form").remove();
+					$("span").remove();
+					var valw = $("#se2").val();
+//                       console.log(valw);
+					$.ajax({ 
+						type: "get",
+						url:"http://wthrcdn.etouch.cn/weather_mini?city="+valw,
+						async: true,
+						dataType: "jsonp",
+						success: function(data) {
+	                       console.log(data);
+							var dataList = data.data.forecast;
+							var datap=data.data.ganmao;
+							$("p").append("<span>" +datap + "</span>");
+							
+						    
+							$("p").before("<form style='font-size: 30px;'>" + valw + "最近五天的天气状况</form>");
+                                
+							$.each(dataList, function(j, k) {
+								
+								 
+								$("table").append(
+									"<tr><td>" + k.date + "</td><td>" + k.fengli + "</td><td>" + k.fengxiang + "</td><td>" + k.high + "</td><td>" + k.low + "</td><td>" + k.type + "</td></tr>"
+								)
+							})	
+
+							}	
+							
+					
+					})
+
+				})
+	
+</script>

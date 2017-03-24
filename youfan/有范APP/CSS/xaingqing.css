@@ -1,0 +1,209 @@
+@import url('reset.css');
+* {
+  padding: 0;
+  margin: 0;
+}
+.full {
+  width: 100%;
+  height: 100%;
+}
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.nav {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  background: #333;
+}
+.nav .leftBtn {
+  margin-left: 20px;
+  width: 22px;
+  height: 22px;
+  background: null;
+  background: url(../image/icon.png) no-repeat -100px -50px;
+}
+.nav .leftBtn:hover {
+  background: url(../image/icon.png) no-repeat -150px -50px;
+}
+.nav .logo {
+  -webkit-box-flex: 1;
+}
+.nav .logo a {
+  width: 66px;
+  height: 33px;
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+}
+.nav .box2 {
+  width: 124px;
+  height: 35px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center ;
+  text-align: center;
+}
+.nav .box2 div {
+  -webkit-box-flex: 1;
+}
+.nav .box2 .er {
+  width: 22px;
+  height: 22px ;
+  background: url("../image/icon.png") no-repeat -100px 0;
+}
+.nav .box2 .er:hover {
+  background: url("../image/icon.png") no-repeat -150px 0;
+}
+.nav .box2 .search {
+  width: 22px;
+  height: 22px;
+  background: url("../image/icon.png") no-repeat 0 -100px;
+}
+.nav .box2 .search:hover {
+  background: url("../image/icon.png") no-repeat -50px -100px;
+}
+.nav .box2 .gou {
+  width: 22px;
+  height: 22px;
+  background: url("../image/icon.png") no-repeat -100px -100px;
+}
+.nav .box2 .gou:hover {
+  background: url("../image/icon.png") no-repeat -150px -100px;
+}
+.banner {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+}
+.banner div {
+  -webkit-box-flex: 1;
+}
+.banner .banner1 {
+  width: 50%;
+  height: 600px;
+  background: null;
+}
+.banner .banner1 .a {
+  width: 100%;
+  height: 75%;
+  background: null;
+}
+.banner .banner1 .a img {
+  width: 50%;
+  height: 75%;
+  background: null;
+}
+.banner .banner1 .a img .c {
+  display: block;
+}
+.banner .banner1 .b {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  text-align: center;
+  width: 100%;
+  height: 150px;
+  background: null;
+}
+.banner .banner1 .b div {
+  width: 18%;
+  height: 120px;
+  background: null;
+  -webkit-box-flex: 1;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.banner .banner1 .b img {
+  width: 100%;
+  height: 100%;
+  background: null;
+}
+.banner .banner2 {
+  width: 50%;
+  height: 600px;
+  background: null;
+}
+.banner .banner2 .ban-top {
+  width: 90%;
+  height: 100px;
+  background: null;
+  border-bottom: 3px solid gainsboro;
+  margin-left: 10%;
+}
+.banner .banner2 .ban-top span {
+  display: block;
+  line-height: 20px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.banner .banner2 .ban-cen {
+  width: 90%;
+  height: 130px;
+  background: null;
+  border-bottom: 3px solid gainsboro;
+  margin-left: 10%;
+}
+.banner .banner2 .ban-cen span {
+  font-size: 20px;
+}
+.banner .banner2 .ban-cen p {
+  margin-top: 10px;
+  line-height: 20px;
+  font-size: 15px;
+}
+.banner .banner2 .ban-fot {
+  width: 90%;
+  height: 100%;
+  background: null;
+  margin-left: 10%;
+}
+.banner .banner2 .ban-fot p {
+  float: left;
+  margin-top: 50px;
+}
+.banner .banner2 .ban-fot .fot-a {
+  width: 15%;
+  height: 45%;
+  float: left;
+  margin-top: 50px;
+}
+.banner .banner2 .ban-fot .fot-a img {
+  width: 100%;
+  height: 100%;
+}
+.banner .banner2 .ban-fot .fot-b {
+  width: 90%;
+  height: 20%;
+  background: null;
+  margin-left: 10%;
+}
+.banner .banner2 .ban-fot .font-c {
+  width: 90%;
+  height: 5%;
+  background: null;
+  margin-left: 10%;
+}
+.banner .banner2 .ban-fot .font-c span {
+  float: left;
+}
+.banner .banner2 .ban-fot .font-c select {
+  float: left;
+}
+.banner .banner2 .ban-fot .font-d {
+  width: 90%;
+  height: 10%;
+  background: yellow;
+  margin-left: 10%;
+}

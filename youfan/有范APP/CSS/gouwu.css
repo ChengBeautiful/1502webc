@@ -1,0 +1,415 @@
+body{
+    padding: 0;
+    margin: 0 auto;
+}
+.nav{
+    width: 76%;
+    margin: 0 auto;
+    height: 40px;
+    background: #666;
+    padding-top: 10px;
+}
+.btn-left{
+    width: 30px;
+    height: 30px;
+    float: left;
+    /*background: yellow;*/
+    /*margin-top: 10px;*/
+    margin-left: 20px;
+    background: url("../image/icon.png")no-repeat -100px -50px;
+}
+.btn-left:hover{
+    background: url("../image/icon.png")no-repeat -150px -50px;
+}
+.btn-logo{
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    float: left;
+    margin-left: 350px;
+}
+p{
+    color:#fff;
+    font-size: 20px;
+    text-align: center;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    float: right;
+    /*background: tomato;*/
+}
+.btn-a{
+    width: 28%;
+    height: 100%;
+float: left;
+    background: url("../image/icon.png")no-repeat -100px 0;
+}
+.btn-a:hover{
+    background: url("../image/icon.png")no-repeat -150px 0;
+}
+.btn-b{
+    width: 28%;
+    height: 100%;
+    /*margin-left: 5px;*/
+    float: left;
+    /*background: #ffff00;*/
+    background: url("../image/icon.png")no-repeat 0 -100px;
+}
+.btn-b:hover{
+    background: url("../image/icon.png")no-repeat -50px -100px;
+}
+.btn-c{
+    width: 28%;
+    height: 100%;
+    /*margin-left: 5px;*/
+    float: left;
+    /*background: #ffff00;*/
+    background: url("../image/icon.png")no-repeat -100px -150px;
+}
+.btn-c:hover{
+    background: url("../image/icon.png")no-repeat -150px -150px;
+}
+
+
+/*banner*/
+.banner{
+    width: 76%;
+    height: 60px;
+    /*background: tomato;*/
+    margin: 0 auto;
+}
+.ban-left{
+    width: 200px;
+    height: 60px;
+    float: left;
+    margin-top: 10px;
+}
+.ban-right{
+    /*width: 200px;*/
+    height: 60px;
+    float: right;
+    margin-top: 10px;
+}
+
+
+/*boday*/
+.boday{
+
+    width: 76%;
+    height: 520px;
+    /*background: tomato;*/
+    margin: 10px auto;
+}
+.bod-top{
+    width: 95%;
+    height: 50px;
+    background: #666;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 16px;
+}
+.bod-top ul li{
+    float: left;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+.bod-on{
+    width: 95%;
+    height: 150px;
+    border: 1px solid #666;
+    margin: 0 auto;
+}
+.on{
+    width: 24%;height: 148px;
+    /*border: 1px solid #666;*/
+    /*border-bottom: none;*/
+    float: left;
+}
+.on input{
+    line-height: 148px;
+    float: left;
+    margin-top: 25%;
+}
+.on img{
+    float: left;
+    margin-left: 10px;
+    margin-top: 11%;
+}
+.on span{
+    font-size: 10px;
+    color: #666;
+}
+.on p{
+    font-size: 12px;
+    color: #999;
+    float: left;
+    margin-top: 20%;
+    margin-left: 15px;
+}
+.dan{
+    width: 12%;
+    height: 148px;
+    border-left: 1px solid #666;
+    float: left;
+
+}
+.dan p{
+    margin: 0 auto;
+    text-align: center;
+    line-height: 148px;
+    color: #666;
+}
+
+
+.dan1{
+    width: 12%;
+    height: 148px;
+    border-left: 1px solid #666;
+    float: left;
+
+}
+.dan1 p{
+    margin: 0 auto;
+    text-align: center;
+    line-height: 148px;
+    color: #666;
+}
+
+
+.dan2{
+    width: 12%;
+    height: 148px;
+    border-left: 1px solid #666;
+    float: left;
+
+}
+.dan2 p{
+    margin: 0 auto;
+    text-align: center;
+    line-height: 148px;
+    color: #666;
+}
+
+
+
+
+
+.shu{
+    width: 13%;
+    height: 148px;
+    border-left: 1px solid #666;
+    float: left;
+}
+.shu input{
+    width: 30px;
+    height: 10px;
+    text-align: center;
+    line-height: 148px;
+
+}
+.shu button{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-top: 45%;
+    margin-left: 10px;
+}
+.fan{
+    width: 13%;
+    height: 148px;
+    border-left: 1px solid #666;
+    float: left;
+}
+.fan p{
+    text-align: center;
+    line-height: 148px;
+    color: #666;
+}
+
+
+
+.shu1{
+    width: 13%;
+    height: 148px;
+    border-left: 1px solid #666;
+    float: left;
+}
+.shu1 input{
+    width: 30px;
+    height: 10px;
+    text-align: center;
+    line-height: 148px;
+
+}
+.shu1 button{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-top: 45%;
+    margin-left: 10px;
+}
+
+
+
+.shu2{
+    width: 13%;
+    height: 148px;
+    border-left: 1px solid #666;
+    float: left;
+}
+.shu2 input{
+    width: 30px;
+    height: 10px;
+    text-align: center;
+    line-height: 148px;
+
+}
+.shu2 button{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-top: 45%;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.xiao{
+    width: 17%;
+    height: 148px;
+    border-left: 1px solid #666;
+    float: left;
+}
+.xiao p{
+    text-align: center;
+    line-height: 148px;
+    color: #666;
+}
+.cao{
+    width: 19%;
+    height: 148px;
+    /*border: 1px solid #666;*/
+    border-left: 1px solid #666;
+    float: left;
+}
+.cao button{
+   margin-top: 30%;
+}
+.shan{
+    margin-left: 30%;
+}
+
+/*bod-fot*/
+
+.bod-fot{
+    width: 73%;
+    height: 70px;
+    background: gainsboro;
+    margin: 10px auto;
+    border: 1px solid #666;
+}
+.bod-fot input{
+    float: left;
+    margin-top: 20px;
+}
+.bod-fot span{
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.bod-fot p{
+    float: left;
+    margin-top: 20px;
+    margin-left: 200px;
+    font-size: 16px;
+    color: #666;
+}
+.bod-fot em{
+    float: right;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.aaa{
+    width: 73%;
+    height: 70px;
+    margin:  0 auto;
+}
+.left{
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    float: left;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.right{
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    float: right;
+    margin-top: 20px;
+    background: red;
+    color: #fff;
+    font-size: 16px;
+}
+
+/*foot */
+.cou{
+    width: 73%;
+    height: 40px;
+    margin:  0 auto;
+    background: gainsboro;
+    border: 1px solid #666;
+}
+.cou div{
+    width: 20px;
+    height: 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    float: left;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.cou span{
+    float: left;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.cou button{
+    float: right;
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+.cou1 li{
+    float: left;
+    margin-left: 14px;
+}
+.cou1{
+   margin-left: 170px;
+}
